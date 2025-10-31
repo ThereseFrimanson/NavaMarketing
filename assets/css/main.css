@@ -195,7 +195,7 @@ html {
 }
 
 body {
-	background: #355e3b ;
+	background: #355e3b;
 }
 
 body,
@@ -2191,7 +2191,7 @@ textarea {
 	-webkit-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
-	background-color: #FCF9F1 ;
+	background-color: #FCF9F1;
 	border-radius: 6px;
 	border: solid 1px #e5e5e5;
 	color: inherit;
@@ -2853,7 +2853,7 @@ input[type="button"],
 	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-	background-color: #355e3b ;
+	background-color: #355e3b;
 	border-radius: 6px;
 	border: 0;
 	color: #FCF9F1;
@@ -2872,14 +2872,14 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
 .button:hover {
-	background-color: #355e3b ;
+	background-color: #355e3b;
 }
 
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
 .button:active {
-	background-color: #355e3b ;
+	background-color: #355e3b;
 }
 
 input[type="submit"].icon,
@@ -2970,7 +2970,7 @@ input[type="submit"].primary:active,
 input[type="reset"].primary:active,
 input[type="button"].primary:active,
 .button.primary:active {
-	background-color: #355e3b ;
+	background-color: #355e3b;
 }
 
 input[type="submit"].disabled,
@@ -2981,7 +2981,7 @@ input[type="button"].disabled,
 input[type="button"]:disabled,
 .button.disabled,
 .button:disabled {
-	background-color: #355e3b  !important;
+	background-color: #355e3b !important;
 	box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
 	color: #f5f5f5 !important;
 	cursor: default;
@@ -3242,7 +3242,7 @@ body.landing #page-wrapper {
 .dropotron li.active>span,
 .dropotron li:hover>a,
 .dropotron li:hover>span {
-	background: #004225 ;
+	background: #004225;
 	color: #ffffff;
 }
 
@@ -3275,7 +3275,7 @@ body.landing #page-wrapper {
 
 #banner {
 	background-attachment: scroll, fixed;
-	background-color: #004225 ;
+	background-color: #004225;
 	background-image: url("images/overlay.png"), url("../../images/banner.png");
 	background-position: top left, center center;
 	background-repeat: repeat, no-repeat;
@@ -3337,7 +3337,7 @@ body.landing #page-wrapper {
 #banner input[type="reset"].primary,
 #banner input[type="button"].primary,
 #banner .button.primary {
-	background: #FCF9F1 ;
+	background: #FCF9F1;
 	color: #666 !important;
 }
 
@@ -3373,7 +3373,7 @@ body.landing #main {
 /* Footer */
 
 #footer {
-	background: #004225 ;
+	background: #004225;
 	padding: 4em 0 6em 0;
 	text-align: center;
 }
@@ -3391,7 +3391,7 @@ body.landing #main {
 }
 
 #footer .copyright {
-	color: #FCF9F1 ;
+	color: #FCF9F1;
 	font-size: 0.9em;
 	line-height: 1em;
 	margin: 2em 0 0 0;
@@ -3420,7 +3420,7 @@ body.landing #main {
 /* CTA */
 
 #cta {
-	background: #004225 ;
+	background: #004225;
 	color: #f9e6df;
 	padding: 3.5em 0 4em 0;
 	text-align: center;
@@ -3446,7 +3446,7 @@ body.landing #main {
 #cta .button {
 	box-shadow: none;
 	background: #fff;
-	color: #004225 ;
+	color: #004225;
 }
 
 #cta input[type="text"],
@@ -4042,4 +4042,225 @@ body.landing #main {
 		padding: 2.5em 1em 3em 1em;
 	}
 
+}
+
+/* --- OM OSS-sektion --- */
+.about-section {
+	padding: 3em 2em;
+	background-color: #FCF9F1;
+}
+
+.about-header {
+	text-align: center;
+	margin-bottom: 1.6em;
+}
+
+.about-header h2 {
+	font-size: 2.3em;
+	color: #355e3b;
+	letter-spacing: -0.02em;
+	margin-bottom: .35em;
+}
+
+.about-subtitle {
+	font-size: 1.2em;
+	color: #355e3b;
+	max-width: 650px;
+	margin: 0 auto;
+	line-height: 1.6em;
+}
+
+/* Layout: text/bild bredvid varandra, toppjusterade */
+.about-section .row {
+	align-items: flex-start;
+}
+
+/* viktigt: toppjustera kolumner */
+.about-text {
+	padding-right: 2.2em;
+}
+
+.about-text h3 {
+	margin: 0 0 .8em 0;
+	color: #355e3b;
+	font-size: 1.45em;
+	/* ingen rand */
+}
+
+.about-text p {
+	color: #355e3b;
+	line-height: 1.65em;
+	margin-bottom: 1.05em;
+	max-width: 46rem;
+}
+
+.about-image .image.fit {
+	max-width: 90%;
+	margin-left: auto;
+}
+
+/* gör bilden visuellt smalare och högerställd */
+.about-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+}
+
+/* Responsivt: stapla på smalare skärmar */
+@media screen and (max-width: 980px) {
+	.about-section {
+		padding: 2.2em 1.2em;
+	}
+
+	.about-text {
+		padding-right: 0;
+		margin-bottom: 1.5em;
+	}
+
+	.about-image .image.fit {
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.about-header h2 {
+		font-size: 2em;
+	}
+
+	.about-subtitle {
+		font-size: 1.05em;
+	}
+}
+
+/* --- Snygga punktlistor i tjänsteboxarna --- */
+.feature-list {
+	list-style: none;
+	padding: 0;
+	margin: 1.5em auto 0;
+	max-width: 20rem;
+	text-align: left;
+}
+
+.feature-list li {
+	position: relative;
+	padding-left: 1.4em;
+	margin: 0.5em 0;
+	color: #355e3b;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+/* Grön punkt framför */
+.feature-list li::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0.55em;
+	width: 0.45em;
+	height: 0.45em;
+	background-color: #355e3b;
+	border-radius: 50%;
+}
+
+/* Centrera hela listan i boxen */
+.one-col {
+	display: block;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* På mobil – lite bredare */
+@media (max-width: 840px) {
+	.feature-list {
+		max-width: 100%;
+	}
+}
+
+
+/* Två kolumner på större skärmar, en på mobil */
+.two-cols {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: .2em 2rem;
+	/* rad- och kolumngap */
+}
+
+@media (max-width: 840px) {
+	.two-cols {
+		grid-template-columns: 1fr;
+		max-width: none;
+	}
+}
+
+/* Justerar höjd mellan text och bild i Om-oss-sektionen */
+.about-section .row {
+	display: flex;
+	align-items: stretch;
+	/* Gör kolumnerna lika höga */
+}
+
+.about-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Centrerar texten vertikalt */
+	padding-right: 2em;
+}
+
+.about-image {
+	display: flex;
+	align-items: stretch;
+}
+
+.about-image .image.fit {
+	width: 100%;
+	height: 100%;
+	/* Gör att bilden fyller hela kolumnens höjd */
+}
+
+.about-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/* Behåller proportioner men fyller höjden */
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Mobil: låt bilden återgå till naturlig höjd */
+@media screen and (max-width: 980px) {
+	.about-section .row {
+		flex-direction: column;
+	}
+
+	.about-image .image.fit,
+	.about-image img {
+		height: auto;
+	}
+}
+
+/* === Sticky footer: se till att footern alltid ligger längst ned och fyller bredden === */
+html,
+body {
+	height: 100%;
+}
+
+#page-wrapper {
+	min-height: 100vh;
+	/* fyll hela vyhöjden */
+	display: flex;
+	flex-direction: column;
+	/* vertikal stapling: header, main, footer */
+}
+
+#main {
+	flex: 1 0 auto;
+	/* ta upp kvarvarande höjd */
+}
+
+#footer {
+	margin-top: auto;
+	/* tryck ned footern till botten */
+	width: 100%;
 }

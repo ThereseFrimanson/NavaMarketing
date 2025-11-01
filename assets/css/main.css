@@ -4264,3 +4264,76 @@ body {
 	/* tryck ned footern till botten */
 	width: 100%;
 }
+
+.client-carousel {
+	text-align: center;
+	background: #355e3b;
+	color: #FCF9F1;
+	padding: 3rem 0;
+	overflow: hidden;
+}
+
+.client-carousel h2 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	color: #FCF9F1;
+}
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+	/* döljer allt utanför fönstret */
+	width: 100%;
+}
+
+.carousel-track {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+	/* avstånd mellan loggor */
+	will-change: transform;
+	/* hint till browsern: optimerad för animation */
+	transition: none !important;
+}
+
+.carousel-track img {
+	height: 250px;
+	/* justera vid behov */
+	object-fit: contain;
+	flex: 0 0 auto;
+	/* förhindra att bilder krymper */
+	transition: transform .25s ease;
+}
+
+.carousel:hover img,
+.carousel:focus-within img {
+	/* liten förstoring vid interaktion */
+	transform: scale(1.06);
+}
+
+/* Respons */
+@media (max-width: 768px) {
+	.carousel-track {
+		gap: 2rem;
+	}
+
+	.carousel-track img {
+		height: 56px;
+	}
+}
+
+/* Tillgänglighet: respektera användare som vill minska rörelse */
+@media (prefers-reduced-motion: reduce) {
+	.carousel-track {
+		transition: none !important;
+	}
+}
+
+.client-carousel {
+	contain: layout paint;
+}
+
+/* isolerar layouten */
+.client-carousel .carousel-track img {
+	display: block;
+}
